@@ -1,5 +1,6 @@
 nums = [1,1,7,3,3]
 target = 6
+
 def twoSum(nums, target):
     hashmap = {}
     for i, num in enumerate(nums):
@@ -9,4 +10,5 @@ def twoSum(nums, target):
             return hashmap[answer],i
         else:
             hashmap[num] = i
+
 indexAnswer = twoSum(nums,target)
